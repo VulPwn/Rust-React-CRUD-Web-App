@@ -40,7 +40,7 @@ pub fn establish_connection() -> Result<Pool, DbError> {
 pub async fn make_detailed_address_api_call<'a>(input: &'a str) -> Result<Option<serde_json::Value>, Box<(dyn StdError + Send + Sync + 'static)>> {
     let mut url: String = "https://maps.googleapis.com/maps/api/place/details/json?place_id=".to_string();
     url += input;
-    url += "&fields=formatted_address&key=AIzaSyAqpUzPe_64qht8DYd472JzKgOprlCnh2s";
+    url += "&fields=formatted_address&key=SECRET_KEY";
     let body = reqwest::get(url)
         .await?
         .json::<serde_json::Value>()
