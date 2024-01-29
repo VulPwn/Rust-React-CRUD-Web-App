@@ -1,0 +1,3 @@
+-- Your SQL goes here
+ALTER TABLE classes
+ADD COLUMN hours INTEGER NOT NULL DEFAULT 8;

@@ -1,0 +1,6 @@
+CREATE TABLE users (
+	id SERIAL PRIMARY KEY,
+	email TEXT NOT NULL,
+	pass TEXT NOT NULL,
+	salt TEXT NOT NULL
+)

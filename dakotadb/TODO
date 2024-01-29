@@ -1,0 +1,2 @@
+Basic authentication has been mostly setup but still needs to be written into the request handling. Actix cookie needs to be setup 
+to store the json web token client side.

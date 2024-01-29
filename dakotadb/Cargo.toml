@@ -1,0 +1,24 @@
+[package]
+name = "dakotadb"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4"
+actix-cors = "0.6.4"
+diesel = { version = "1.4.4", features = ["postgres", "chrono", "r2d2"] }
+jsonwebtoken = "9.1.0"
+dotenv = "0.15.0"
+chrono = {version = "0.4.31", features = ["serde"] }
+r2d2 = "0.8.10"
+env_logger = "0.10.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+rust-argon2 = "2.0"
+rand = "0.8.5"
+reqwest = { version = "0.11", features = ["json"] }
+openssl = "0.10.58"
+tokio = { version = "1", features = ["full"] }
